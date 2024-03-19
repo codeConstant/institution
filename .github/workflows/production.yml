@@ -1,4 +1,4 @@
-name: Ci for Staging
+name: Ci for Production
 
 on:
   push:
