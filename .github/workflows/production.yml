@@ -28,8 +28,8 @@ jobs:
       - name: Build with Gradle Wrapper
         run: ./gradlew build
 
-#      - name: Copy jar file to another directory
-#        run: sudo cp /home/ubuntu/actions-runner-production/_work/institution/institution/build/libs/institution-0.0.1-SNAPSHOT.jar /home/ubuntu/institution-production
-#
-#      - name: Finally Run the artifact service
-#        run: sudo systemctl restart institution-production.service
+      - name: Copy jar file to another directory
+        run: sudo cp /home/ubuntu/actions-runner-production/_work/institution/institution/build/libs/institution-0.0.1-SNAPSHOT.jar /home/ubuntu/institution-production
+
+      - name: Finally Run the artifact service
+        run: sudo systemctl restart institution-production.service
